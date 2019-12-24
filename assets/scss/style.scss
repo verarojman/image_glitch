@@ -86,11 +86,24 @@ main {
     
     .option {
       display: grid;
+      grid-template-columns: 1fr units(2);
       grid-template-rows: units(2) units(2);
       grid-auto-flow: dense;
 
+      background-color: getcolor(gray);
+      padding: units(1);
+
+      input {
+        grid-column: span 2;
+      }
+
       label {
         font-size: font-size(small);
+      }
+      
+      .value {
+        font-size: font-size(small);
+        text-align: right;
       }
     }
   }

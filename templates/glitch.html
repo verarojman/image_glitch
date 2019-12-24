@@ -21,6 +21,7 @@
         <label for="{{name}}">{{options['label']}}</label>
         <input type="range" name="{{name}}" value="{{parameters[name]}}"
               step="{{options['step']}}" min="{{options['min']}}" max="{{options['max']}}">
+        <span class="value">{{parameters[name]}}</span>
       </div>
     {% endfor %}
   </section>
@@ -81,4 +82,8 @@
   </section>
 </form>
 
+{% endblock %}
+
+{% block scripts %}
+  <script src="/static/js/glitch.js"></script>
 {% endblock %}

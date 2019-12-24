@@ -10,9 +10,9 @@ $colors: (
   alt: darken($purple, 10%),
   bg: #222,
   black: darken(#222, 5%),
+  gray: lighten(#222, 5%),
   text: white,
   text-muted: #aaa,
-  gray: gray,
   white: white,
   transparent: rgba($color: white, $alpha: 0.0)
 ) !default;
